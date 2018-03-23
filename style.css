@@ -6,22 +6,35 @@
 html { 
   font-size: 100%;
   font-family: 'Exo', sans-serif;
-} 
+  background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)), url("tunnel.jpeg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: rgb(252, 249, 249);
+  }
+
 @media only screen and (max-width: 768px) {
 html {
-  font-size: 10px;}
+  font-size: 10px;
+  
+}
 }
 body {
-  /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
-  background: no-repeat  url("background5.jpeg");
-  background-size: 100%;
+  /* background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+  /* background-color: lightcyan; */
+  /* background-image : url("background5.jpeg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100%; */
   
-  margin: 2%;
+  
+  /* margin: 2%; */
   
 }
 
+
 /* ----------Navigation Bar Section----------------- */
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 768px) {
 .nav {
   margin: 1%;
   position: fixed;
@@ -33,7 +46,7 @@ div .nav{
     display: flex;
     padding: 15px;
     justify-content: left;
-    background-color: rgba(255,255,255,0.5)
+    background-color: rgba(248, 243, 168, 0.486)
   }
 nav .nav-link{
     font-size: 0.8rem;
@@ -121,7 +134,7 @@ nav .nav-link{
     margin-right: 48%;
 }
 /* Placing Education and Work experience next to each other */
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 768px) {
   /* only for screens wider or equal to 630 pixels */
 .education {
     margin: 1rem;  
@@ -148,16 +161,33 @@ nav .nav-link{
     margin-bottom: 1rem;
     margin-top: 1.5rem;
   }
-.education p {
+  /* Adding animation to my education and experience section */
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+.animation { 
+    color: white;
+    width: 63%;
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(21, end),
+               blink-caret .5s step-end infinite alternate;
+}
+/* .education p {
   text-align: center;
   font-size: 1.5rem;
-  }
+  } */
 .work-experience p {
   text-align: center;
   font-size: 1.5rem;
   }
 
 /* ----------- My expertise Section -------- */
+@media only screen and (min-width: 768px) {
+  /* only for screens wider or equal to 768 pixels */
 .my-expertise {
     clear: both;
     display: flex;
@@ -166,12 +196,16 @@ nav .nav-link{
     justify-content: space-evenly;
     align-items: flex-start;
   }
+
   .expertise {              /*Centering the arrow*/
     clear:both;
     margin-bottom: 4%;
-    margin-left: 48%;
+    margin-left: 40%;
     margin-right: 48%;
   }
+  
+}
+
   #title-my-expertise {
     font-size: 2.5rem;
     margin-top: 2rem;
@@ -220,15 +254,17 @@ nav .nav-link{
   .ruby-icon, .rails-icon, .html-icon, .css-icon {
     height: 2rem;
     width: 2rem;
+    text-align: center;
+    padding-left: 42%;
   }
 }
 li{ 
     list-style: none;
    }
-     
+
 /* --------- My Projects Section ----------- */
 /* Placing Ruby and On rails projects next to each other */
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 768px) {
   /* only for screens wider or equal to 630 pixels */
   .my-projects {
     clear: both;
@@ -261,23 +297,11 @@ li{
   margin-bottom: 1rem;
   margin-top: 1.5rem;
    }
-/* .ruby-icon, .rails-icon{
-  display: inline;
-  max-height:4rem;
-  transition: all 0.5s;
-  margin: 1rem;
+   .paragraph {
+     font-size: 1.5rem;
+     padding: 1.5rem;
    }
-.ruby-icon {
-  position: relative;
-    left: 21%;
-    margin: 1rem;
-   }
-.rails-icon {
-  position: relative;
-  left: 60%;
-  margin: 1rem;
-   } */
-   
+
 /* --------  Contact me Section ------------- */
 #get-in-touch{
     clear: both;
@@ -300,42 +324,52 @@ li{
 
 /* --------- Contact me social media and github icons section ---- */
 #link-icons {
-  margin: 2.5rem;
+  /* margin: 2.5rem; */
   text-align: right;
-  height: 5rem;
+  height: 2rem;
+}
+@media only screen and (max-width: 630px) {
+  /* only for screens wider or equal to 630 pixels */
+  .tsc_social_round_gray_32 {
+  padding-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .github_round_gray_32 {
+    background-size: 3rem 3rem;
+    height: 3rem;
+  }
 }
 .linkedin_round_gray_32 {
-  background: url(http://www.dreamtemplate.com/dreamcodes/social_icons/linkedin-focused.png) no-repeat;
+  background: url(https://www.dreamtemplate.com/dreamcodes/social_icons/linkedin-focused.png) no-repeat;
 }
+
 .tsc_social_round_gray_32 {
   display: inline-block;
   text-indent: -999em;
-  height: 5rem;
+  height: 2rem;
   width: 5rem;
   text-decoration: none;
-  padding: 2px;
+  /* padding: 2px; */
   vertical-align: middle;
 }
-/* @media only screen and (min-width: 630px) {
-.tsc_social_round_gray_32 {
-  height: 3rem;
-  width: 3rem; }
-} */
+
 .facebook_round_gray_32 {
-  background: url(http://www.dreamtemplate.com/dreamcodes/social_icons/facebook-focused.png) no-repeat;
+  background: url(https://www.dreamtemplate.com/dreamcodes/social_icons/facebook-focused.png) no-repeat;
 }
 .github_round_gray_32 {
   background: url('github.png') no-repeat;
   background-size: 2rem 2rem;
-  
-}
+  }
 
 /* Back to top link */
 /* Format the back to top link */
 .to-top {
+    font-size: 1.5rem;
     text-decoration: none;
     color: black;
     margin: 2.5rem;
+    padding: 3rem;
     }
 .to-top:hover {
     color: red;
