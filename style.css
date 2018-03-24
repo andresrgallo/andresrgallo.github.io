@@ -6,60 +6,98 @@
 html { 
   font-size: 100%;
   font-family: 'Exo', sans-serif;
-  background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)), url("tunnel.jpeg") no-repeat center center fixed; 
+  background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0,0.4)), url("tunnel.jpeg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: rgb(252, 249, 249);
+  color: rgb(175, 170, 170)
+  /* color: rgb(188, 194, 165); */
   }
+html li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+ }
+ html p {
+  margin: 1rem 10% 0 10%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+/* Format Favicon page */
 
+.favicon {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.2));
+  /* box-shadow: 10px 10px 5px #ccc; */
+}
+
+ /* -------  Set up for mobile phones -----------*/
 @media only screen and (max-width: 768px) {
 html {
   font-size: 10px;
-  
 }
-}
-body {
-  /* background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
-  /* background-color: lightcyan; */
-  /* background-image : url("background5.jpeg"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: 100%; */
-  
-  
-  /* margin: 2%; */
-  
-}
-
-
-/* ----------Navigation Bar Section----------------- */
-@media only screen and (min-width: 768px) {
 .nav {
-  margin: 1%;
-  position: fixed;
-  top: 0;
-  margin-left: 60%;
+    margin: 0.5%;
+    line-height: 1rem;
+    padding: 0.7rem;
+    }
+.title {
+      margin-top: 15%;
+      margin-left: 12%;
+ }
+.tsc_social_round_gray_32 {
+    padding-bottom: 2rem;
+  }
+.mob-image, .laptop {
+  height: 3rem;
+  width: 3rem;
 }
+html li, html p {
+  margin: 0 5% 0 5%;
+}
+.activities img {
+  margin-top: 0;
+}
+.favicon {
+   height: 0rem;
+}
+.touch{padding-bottom: 1rem;
   }
-div .nav{
+}
+
+@media only screen and (min-width: 768px) {
+body {
+  line-height: 2rem;
+  height: auto;
+  }
+}
+
+
+/* ----------Navigation Bar Section----------------- */  
+nav {
+    margin: 1%;
+    position: fixed;
+    top: 0;
+    margin-left: 50%;
     display: flex;
-    padding: 15px;
-    justify-content: left;
-    background-color: rgba(248, 243, 168, 0.486)
-  }
+    padding: 1rem;
+    }
 nav .nav-link{
-    font-size: 0.8rem;
-    padding-right: 10px;
-    margin: 0 4px 0 4px;
-    text-decoration: none;
-    transition: color 0.25s;
-    color: black;
-    font-family: 'Lato', sans-serif;
-    align-self: right;
-  }
+      line-height: 1rem;
+      font-size: 0.8rem;
+      padding-right: 1rem;
+      margin: 0 0.5rem 0 0.5rem;
+      text-decoration: none;
+      transition: color 0.25s;
+      color: rgb(221, 209, 209);
+      font-weight: bold;
+      font-family: 'Lato', sans-serif;
+      align-self: right;
+    }
 .nav-pipe {
-      border-right: black 1px solid;
+      border-right: rgb(154, 155, 152) 1px solid;
   }
 .nav-link:hover{
     font-weight: bold;
@@ -67,15 +105,12 @@ nav .nav-link{
 
 /* -------------Presentation animation------------- */
 .title {
-    /* font-family: 'Exo', sans-serif; */
-    font-family: 'Exo', sans-serif;
-    /* font-family: 'Poiret One', cursive; */
-    margin-top: 7%;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10%;
     margin-left: 20%;
     animation: move 3s;
   -webkit-animation: move 3s;
  }
-
 @keyframes move {
     from {
       margin-left: 100%;
@@ -100,6 +135,7 @@ nav .nav-link{
 
 /*------- About me Section -------------*/
 .arrow-bottom{
+    margin-left: 50%;
     position: relative;
     top: 2rem;
     width: 0;
@@ -109,23 +145,25 @@ nav .nav-link{
     border-color: #050505 transparent transparent transparent;
     margin-bottom: 0;
   }
-  
-#about-me {
-    text-align: center;
-  }
 .title-about-me {
+  text-align: center;
   margin: 2.0rem;
   font-size: 2.5rem;
  }  
-#about-me p {
-  font-size: 1.5rem;
+.activities {
+  text-align: center
+}
+.activities img {
+  padding: 1.5rem;
+  height: 3.5rem;
+  margin-top: rem;
  }
 
 /* -------- Education and Work Section ----------- */
 /* Adding some style to my Education and Work title */
 .title-edu-and-work {
     font-size: 2.5rem;
-    margin: 2.5rem;
+    margin: 2rem;
     text-align: center;
   }
 .edu {
@@ -137,12 +175,10 @@ nav .nav-link{
 @media only screen and (min-width: 768px) {
   /* only for screens wider or equal to 630 pixels */
 .education {
-    margin: 1rem;  
     float: left;
     width: 45%;
   }
 .work-experience {
-    margin: 1rem;
     margin-bottom: 2.5rem;
     float: right;
     width:45%;
@@ -153,22 +189,20 @@ nav .nav-link{
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
-    margin-top: 1.5rem;
   }
 .work-experience h2{
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
-    margin-top: 1.5rem;
-  }
+   }
   /* Adding animation to my education and experience section */
 @-webkit-keyframes typing { from { width: 0; } }
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
 .animation { 
-    color: white;
-    width: 63%;
-    margin-left: 20%;
+    /* color: white; */
+    width: 80%;
+    margin-left: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
     /* white-space: nowrap; */
@@ -188,7 +222,7 @@ nav .nav-link{
 /* ----------- My expertise Section -------- */
 @media only screen and (min-width: 768px) {
   /* only for screens wider or equal to 768 pixels */
-.my-expertise {
+.div-expertise {
     clear: both;
     display: flex;
     flex-direction: row;
@@ -197,19 +231,15 @@ nav .nav-link{
     align-items: flex-start;
   }
 
-  .expertise {              /*Centering the arrow*/
+  .arr-expertise {              /*Centering the arrow*/
     clear:both;
     margin-bottom: 4%;
-    margin-left: 40%;
-    margin-right: 48%;
   }
   
 }
-
   #title-my-expertise {
     font-size: 2.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem; 
+    margin: 2rem;
     clear: both;
     text-align: center;
    }
@@ -224,22 +254,21 @@ nav .nav-link{
 }
 
 .ruby-icon { 
-  margin: 2rem;         /* Format icons */
-  height: 12rem;
-  width: 12rem;
+  margin: 1rem;         /* Format icons */
+  height: 7rem;
   display: block;
   transition: all 0.5s;
 }
 .rails-icon {
-  margin: 2rem;
-  height: 12rem;
-  width: 14rem;
+  margin: 1rem;
+  height: 7rem;
   display: block;
   transition: all 0.5s;
 }
 .html-icon, .css-icon { 
-  height: 12rem;
-  margin: 2rem;         /* Format icons */
+  height: 7rem;
+  width: 8rem;
+  margin: 1rem;         /* Format icons */
   display: block;
   transition: all 0.5s;
 }
@@ -255,10 +284,10 @@ nav .nav-link{
     height: 2rem;
     width: 2rem;
     text-align: center;
-    padding-left: 42%;
+    padding-left: 45%;
   }
 }
-li{ 
+.fe-list, .be-list{ 
     list-style: none;
    }
 
@@ -282,8 +311,6 @@ li{
   }
   #title-my-projects {
     font-size: 2.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem; 
     clear: both;
     text-align: center;
    }
@@ -299,13 +326,39 @@ li{
    }
    .paragraph {
      font-size: 1.5rem;
-     padding: 1.5rem;
-   }
+    }
+/* Resizing images */
+  @media only screen and (min-width: 768px) {
+   .laptop, .mob-image{
+     height: 7rem;
+     }
+  }
+/* Add a shaking animation to images */
+     .laptop:hover, .mob-image:hover {
+      animation: shake 0.5s; 
+      /* When the animation is finished, start again */
+      animation-iteration-count: infinite; 
+  }
+  
+  @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+/* Line settings */
 
 /* --------  Contact me Section ------------- */
 #get-in-touch{
     clear: both;
-    margin: 2.5rem;
   }
   .touch {              /*Centering the arrow*/
     clear:both;
@@ -314,9 +367,9 @@ li{
     margin-right: 48%;
   }
 .title-get-in-touch {
+    margin-bottom: 2rem;
     font-size: 2.5rem;
     text-align: center;
-    margin: 2.5rem;
   }
 #get-in-touch p {
   font-size: 1.5rem;
@@ -328,12 +381,7 @@ li{
   text-align: right;
   height: 2rem;
 }
-@media only screen and (max-width: 630px) {
-  /* only for screens wider or equal to 630 pixels */
-  .tsc_social_round_gray_32 {
-  padding-bottom: 2rem;
-  }
-}
+
 @media only screen and (max-width: 768px) {
   .github_round_gray_32 {
     background-size: 3rem 3rem;
