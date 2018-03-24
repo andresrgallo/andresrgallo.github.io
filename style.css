@@ -78,7 +78,7 @@ body {
 /* ----------Navigation Bar Section----------------- */  
 nav {
     margin: 1%;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     margin-left: 50%;
     display: flex;
@@ -430,7 +430,7 @@ form {
 .to-top {
     font-size: 1.5rem;
     text-decoration: none;
-    color: black;
+    color: rgb(107, 101, 101);
     margin: 2.5rem;
     padding: 3rem;
     }
