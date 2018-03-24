@@ -23,19 +23,23 @@ html li {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
 }
-/* Format Favicon page */
 
+/* -------- Format Favicon page -------- */
 .favicon {
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 10%;
-  background: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.2));
+  background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0,0.1));
   /* box-shadow: 10px 10px 5px #ccc; */
 }
 
  /* -------  Set up for mobile phones -----------*/
 @media only screen and (max-width: 768px) {
 html {
+  background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.7)), url("tunnel.jpeg") no-repeat center center fixed; 
+  background-size: cover;
+  background-position: 50% top;
+  background-attachment: fixed;
   font-size: 10px;
 }
 .nav {
@@ -73,7 +77,6 @@ body {
   height: auto;
   }
 }
-
 
 /* ----------Navigation Bar Section----------------- */  
 nav {
@@ -162,58 +165,54 @@ nav .nav-link{
 /* -------- Education and Work Section ----------- */
 /* Adding some style to my Education and Work title */
 .title-edu-and-work {
-    font-size: 2.5rem;
-    margin: 2rem;
-    text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem;
+  text-align: center;
   }
 .edu {
-    margin-bottom: 4%;
-    margin-left: 48%;
-    margin-right: 48%;
+  margin-bottom: 4%;
+  margin-left: 48%;
+  margin-right: 48%;
 }
 /* Placing Education and Work experience next to each other */
 @media only screen and (min-width: 768px) {
   /* only for screens wider or equal to 630 pixels */
 .education {
-    float: left;
-    width: 45%;
+  float: left;
+  width: 45%;
   }
 .work-experience {
-    margin-bottom: 2.5rem;
-    float: right;
-    width:45%;
+  float: right;
+  width:45%;
   }
 } 
 /* Centering titles */
 .education h2{
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
   }
 .work-experience h2{
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
    }
   /* Adding animation to my education and experience section */
 @-webkit-keyframes typing { from { width: 0; } }
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
-
 .animation { 
-    /* color: white; */
     width: 80%;
-    margin-left: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
-    /* white-space: nowrap; */
     overflow: hidden;
     -webkit-animation: typing 2s steps(21, end),
                blink-caret .5s step-end infinite alternate;
 }
-/* .education p {
-  text-align: center;
-  font-size: 1.5rem;
-  } */
+.education .animation{
+  margin-left: 30%;
+}
+.work-experience .animation{
+  margin-right: 30%;
+}
 .work-experience p {
   text-align: center;
   font-size: 1.5rem;
@@ -230,54 +229,51 @@ nav .nav-link{
     justify-content: space-evenly;
     align-items: flex-start;
   }
-
-  .arr-expertise {              /*Centering the arrow*/
+.arr-expertise {              /*Centering the arrow*/
     clear:both;
     margin-bottom: 4%;
   }
-  
 }
   #title-my-expertise {
     font-size: 2.5rem;
     margin: 2rem;
     clear: both;
     text-align: center;
-   }
-  .front-end, .back-end {
+  }
+.front-end, .back-end {
     margin-top: 0px;
     font-size: 1.5em;
     text-align: center;
-    }
+  }
 .title-front-end, .title-back-end {
   font-size: 2rem;
   margin-bottom: 1rem;
-}
-
+  }
 .ruby-icon { 
   margin: 1rem;         /* Format icons */
   height: 7rem;
   display: block;
   transition: all 0.5s;
-}
+  }
 .rails-icon {
   margin: 1rem;
   height: 7rem;
   display: block;
   transition: all 0.5s;
-}
+  }
 .html-icon, .css-icon { 
   height: 7rem;
   width: 8rem;
   margin: 1rem;         /* Format icons */
   display: block;
   transition: all 0.5s;
-}
+  }
 .html-icon:hover, .css-icon:hover{             /* Some animations */
   transform: rotate(360deg) scale(1.2);
-   }
+  }
 .rails-icon:hover, .ruby-icon:hover{
   transform: skew(30deg, 20deg);
-   }
+  }
 /* Format for mobile devices */
 @media only screen and (max-width: 768px) {
   .ruby-icon, .rails-icon, .html-icon, .css-icon {
@@ -289,7 +285,7 @@ nav .nav-link{
 }
 .fe-list, .be-list{ 
     list-style: none;
-   }
+  }
 
 /* --------- My Projects Section ----------- */
 /* Placing Ruby and On rails projects next to each other */
@@ -302,65 +298,63 @@ nav .nav-link{
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: flex-start;
-  }}
-  .proj {              /*Centering the arrow*/
+  }
+}
+.proj {              /*Centering the arrow*/
     clear:both;
     margin-bottom: 4%;
     margin-left: 48%;
     margin-right: 48%;
-  }
-  #title-my-projects {
+    }
+#title-my-projects {
     font-size: 2.5rem;
     clear: both;
     text-align: center;
-   }
-  .ruby, .on-rails {
+    }
+.ruby, .on-rails {
     margin-top: 0px;
     font-size: 1.5rem;
     text-align: center;
-   }
+    }
 .title-ruby, .title-on-rails {
   font-size: 2rem;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
-   }
-   .paragraph {
+    }
+.paragraph {
      font-size: 1.5rem;
     }
 /* Resizing images */
   @media only screen and (min-width: 768px) {
-   .laptop, .mob-image{
+.laptop, .mob-image{
      height: 7rem;
      }
   }
 /* Add a shaking animation to images */
-     .laptop:hover, .mob-image:hover {
+.laptop:hover, .mob-image:hover {
       animation: shake 0.5s; 
       /* When the animation is finished, start again */
       animation-iteration-count: infinite; 
   }
-  
-  @keyframes shake {
-      0% { transform: translate(1px, 1px) rotate(0deg); }
-      10% { transform: translate(-1px, -2px) rotate(-1deg); }
-      20% { transform: translate(-3px, 0px) rotate(1deg); }
-      30% { transform: translate(3px, 2px) rotate(0deg); }
-      40% { transform: translate(1px, -1px) rotate(1deg); }
-      50% { transform: translate(-1px, 2px) rotate(-1deg); }
-      60% { transform: translate(-3px, 1px) rotate(0deg); }
-      70% { transform: translate(3px, 1px) rotate(-1deg); }
-      80% { transform: translate(-1px, -1px) rotate(1deg); }
-      90% { transform: translate(1px, 2px) rotate(0deg); }
-      100% { transform: translate(1px, -2px) rotate(-1deg); }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
-
-/* Line settings */
 
 /* --------  Contact me Section ------------- */
 #get-in-touch{
     clear: both;
   }
-  .touch {              /*Centering the arrow*/
+.touch {              /*Centering the arrow*/
     clear:both;
     margin-bottom: 4%;
     margin-left: 48%;
@@ -374,29 +368,28 @@ nav .nav-link{
 #get-in-touch p {
   font-size: 1.5rem;
   text-align: center;
-}
+  }
 /* Add contact form */
 form {
   margin-top: 2rem;
   text-align: center;
   line-height: 2rem;
-}
+  }
 .required {
   font-size: 1.2rem;
-}
+  }
 #name, #email, #message {
   width: 40%;
   line-height: 2rem;
   font-size: 1.2rem;
   background-color: rgb(133, 140, 146)
-}
+  }
 /* --------- Contact me social media and github icons section ---- */
 #link-icons {
-  /* margin: 2.5rem; */
   text-align: right;
   height: 2rem;
-}
-
+  margin-top: 2rem;
+  }
 @media only screen and (max-width: 768px) {
   .github_round_gray_32 {
     background-size: 3rem 3rem;
@@ -405,21 +398,18 @@ form {
 }
 .linkedin_round_gray_32 {
   background: url(https://www.dreamtemplate.com/dreamcodes/social_icons/linkedin-focused.png) no-repeat;
-}
-
+  }
 .tsc_social_round_gray_32 {
   display: inline-block;
   text-indent: -999em;
   height: 2rem;
   width: 5rem;
   text-decoration: none;
-  /* padding: 2px; */
   vertical-align: middle;
-}
-
+  }
 .facebook_round_gray_32 {
   background: url(https://www.dreamtemplate.com/dreamcodes/social_icons/facebook-focused.png) no-repeat;
-}
+  }
 .github_round_gray_32 {
   background: url('github.png') no-repeat;
   background-size: 2rem 2rem;
