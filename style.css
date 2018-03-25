@@ -12,8 +12,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
   color: rgb(175, 170, 170)
-  /* color: rgb(188, 194, 165); */
-  }
+}
 html li, #submit_button {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -31,7 +30,6 @@ html li, #submit_button {
   right: 50%;
   height: 5rem;
   background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0,0.1));
-  /* box-shadow: 10px 10px 5px #ccc; */
 }
 
  /* -------  Set up for mobile phones -----------*/
@@ -73,7 +71,8 @@ html li, html p {
 }
 .touch {
   padding-bottom: 1rem;
-  }
+}
+
 /* Education and work experience section */
 .work-experience, .education {
   margin-left: 5%;
@@ -95,7 +94,6 @@ body {
 /* ----------Navigation Bar Section----------------- */  
 nav {
     margin: 1%;
-    /* position: fixed; */
     top: 0;
     margin-left: 50%;
     display: flex;
@@ -185,9 +183,8 @@ nav .nav-link {
   }
 .edu {
   margin-bottom: 4%;
-  /* margin-left: 48%;
-  margin-right: 48%; */
 }
+
 /* Placing Education and Work experience next to each other */
 @media only screen and (min-width: 768px) {
   /* only for screens wider or equal to 768 pixels */
@@ -233,8 +230,6 @@ nav .nav-link {
   text-align: center;
   font-size: 1.5rem;
   }
-
-
 
 /* ----------- My expertise Section -------- */
 @media only screen and (min-width: 768px) {
@@ -317,8 +312,6 @@ nav .nav-link {
 .proj {              /*Centering the arrow*/
     clear:both;
     margin-bottom: 4%;
-    /* margin-left: 48%;
-    margin-right: 48%; */
     }
 #title-my-projects {
     font-size: 2.5rem;
@@ -402,7 +395,6 @@ form {
 #submit_button {
   width: 10rem;
   background-color: rgb(175, 170, 170);
-  /* text-transform: uppercase; */
   font-weight: 500;
   color: #000;
   border: none;
