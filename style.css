@@ -41,6 +41,9 @@ html {
   background-attachment: fixed;
   font-size: 10px;
 }
+/* body {
+  margin: 0 5% 0 5%;
+} */
 .nav {
     margin: 0.5%;
     line-height: 1rem;
@@ -57,8 +60,8 @@ html {
   height: 3rem;
   width: 3rem;
 }
-html li, html p {
-  margin: 0 5% 0 5%;
+h2, li, p {
+  margin: 0 10% 0 10%;
 }
 .activities img {
   margin-top: 0;
@@ -81,7 +84,9 @@ html li, html p {
   margin-bottom: 1rem;
 }
 .to-top {
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 1rem;
+  height: 3rem;
+  width: 1rem;
 }
 }
 @media only screen and (min-width: 768px) {
@@ -164,8 +169,8 @@ nav .nav-link {
   text-align: center;
   margin: 2.0rem;
   font-size: 2.5rem;
- }  
-.activities {
+ }
+ .activities {
   text-align: center
 }
 .activities img {
@@ -319,7 +324,6 @@ nav .nav-link {
     text-align: center;
     }
 .ruby, .on-rails {
-    float: 1;
     margin-top: 0px;
     font-size: 1.5rem;
     text-align: center;
@@ -332,6 +336,9 @@ nav .nav-link {
 .paragraph {
      font-size: 1.5rem;
     }
+.p-ruby, .p-rails {
+  text-align: left;
+}
 /* Resizing images */
   @media only screen and (min-width: 768px) {
 .laptop, .mob-image{
