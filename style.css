@@ -337,7 +337,10 @@ nav .nav-link {
      font-size: 1.5rem;
     }
 .p-ruby, .p-rails {
-  text-align: left;
+ text-align: left;
+}
+.p-ruby {
+  margin-left: 6.5rem;
 }
 /* Resizing images */
   @media only screen and (min-width: 768px) {
@@ -452,6 +455,7 @@ hr {
 /* Back to top link */
 /* Format the back to top link */
 .to-top {
+    margin-left: 0.5rem;
     position: fixed;
     bottom: 2rem;
     font-size: 1rem;
