@@ -6,7 +6,7 @@
 html { 
   font-size: 100%;
   font-family: 'Exo', sans-serif;
-  background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0,0.4)), url("images/tunnel.jpeg") no-repeat center center fixed; 
+  background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0,0.4)), url("tunnel.jpeg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,7 +35,7 @@ html li, #submit_button {
  /* -------  Set up for mobile phones -----------*/
 @media only screen and (max-width: 768px) {
 html {
-  background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url("images/tunnel.jpeg") no-repeat center center fixed; 
+  background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url("tunnel.jpeg") no-repeat center center fixed; 
   background-size: cover;
   background-position: 50% top;
   background-attachment: fixed;
@@ -431,7 +431,7 @@ form {
   vertical-align: middle;
   }
 .github_round_gray_32 {
-  background: url('images/github.png') no-repeat;
+  background: url('github.png') no-repeat;
   background-size: 2.3rem 2.3rem;
   border: none;
   border-radius: 0.5rem;
