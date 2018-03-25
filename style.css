@@ -14,7 +14,7 @@ html {
   color: rgb(175, 170, 170)
   /* color: rgb(188, 194, 165); */
   }
-html li {
+html li, #submit_button {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
  }
@@ -27,8 +27,9 @@ html li {
 /* -------- Format Favicon page -------- */
 .favicon {
   position: absolute;
-  top: 15%;
-  left: 10%;
+  top: 2%;
+  right: 50%;
+  height: 5rem;
   background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0,0.1));
   /* box-shadow: 10px 10px 5px #ccc; */
 }
@@ -36,7 +37,7 @@ html li {
  /* -------  Set up for mobile phones -----------*/
 @media only screen and (max-width: 768px) {
 html {
-  background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.7)), url("tunnel.jpeg") no-repeat center center fixed; 
+  background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url("tunnel.jpeg") no-repeat center center fixed; 
   background-size: cover;
   background-position: 50% top;
   background-attachment: fixed;
@@ -67,9 +68,24 @@ html li, html p {
 .favicon {
    height: 0rem;
 }
-.touch{padding-bottom: 1rem;
-  }
+.proj {
+  padding-bottom: 1rem;
 }
+.touch {
+  padding-bottom: 1rem;
+  }
+/* Education and work experience section */
+.work-experience, .education {
+  margin-left: 5%;
+}
+.education {
+  margin-bottom: 1rem;
+}
+.to-top {
+  margin-bottom: 1rem;
+}
+}
+
 
 @media only screen and (min-width: 768px) {
 body {
@@ -87,7 +103,7 @@ nav {
     display: flex;
     padding: 1rem;
     }
-nav .nav-link{
+nav .nav-link {
       line-height: 1rem;
       font-size: 0.8rem;
       padding-right: 1rem;
@@ -171,21 +187,22 @@ nav .nav-link{
   }
 .edu {
   margin-bottom: 4%;
-  margin-left: 48%;
-  margin-right: 48%;
+  /* margin-left: 48%;
+  margin-right: 48%; */
 }
 /* Placing Education and Work experience next to each other */
 @media only screen and (min-width: 768px) {
-  /* only for screens wider or equal to 630 pixels */
+  /* only for screens wider or equal to 768 pixels */
 .education {
+  margin-left: 15%;
   float: left;
-  width: 45%;
+  width: 40%;
   }
 .work-experience {
   float: right;
   width:45%;
   }
-} 
+
 /* Centering titles */
 .education h2{
   font-size: 2rem;
@@ -196,19 +213,20 @@ nav .nav-link{
   font-size: 2rem;
   margin-bottom: 2rem;
    }
+  }
   /* Adding animation to my education and experience section */
 @-webkit-keyframes typing { from { width: 0; } }
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 .animation { 
     width: 80%;
     margin-top: 2%;
-    margin-bottom: 2%;
-    overflow: hidden;
+    margin-bottom: 0%;
+    /* overflow: hidden; */
     -webkit-animation: typing 2s steps(21, end),
                blink-caret .5s step-end infinite alternate;
 }
 .education .animation{
-  margin-left: 30%;
+  /* margin-left: 30%; */
 }
 .work-experience .animation{
   margin-right: 30%;
@@ -217,6 +235,8 @@ nav .nav-link{
   text-align: center;
   font-size: 1.5rem;
   }
+
+
 
 /* ----------- My expertise Section -------- */
 @media only screen and (min-width: 768px) {
@@ -303,8 +323,8 @@ nav .nav-link{
 .proj {              /*Centering the arrow*/
     clear:both;
     margin-bottom: 4%;
-    margin-left: 48%;
-    margin-right: 48%;
+    /* margin-left: 48%;
+    margin-right: 48%; */
     }
 #title-my-projects {
     font-size: 2.5rem;
@@ -357,8 +377,8 @@ nav .nav-link{
 .touch {              /*Centering the arrow*/
     clear:both;
     margin-bottom: 4%;
-    margin-left: 48%;
-    margin-right: 48%;
+    /* margin-left: 48%;
+    margin-right: 48%; */
   }
 .title-get-in-touch {
     margin-bottom: 2rem;
@@ -384,47 +404,71 @@ form {
   font-size: 1.2rem;
   background-color: rgb(133, 140, 146)
   }
+#submit_button {
+  width: 10rem;
+  background-color: rgb(175, 170, 170);
+  /* text-transform: uppercase; */
+  font-weight: 500;
+  color: #000;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.9);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
 /* --------- Contact me social media and github icons section ---- */
 #link-icons {
   text-align: right;
   height: 2rem;
-  margin-top: 2rem;
+  margin: 2rem 0 2rem 0;
   }
-@media only screen and (max-width: 768px) {
-  .github_round_gray_32 {
-    background-size: 3rem 3rem;
-    height: 3rem;
-  }
-}
 .linkedin_round_gray_32 {
   background: url(https://www.dreamtemplate.com/dreamcodes/social_icons/linkedin-focused.png) no-repeat;
+  background-size: 50%;
   }
 .tsc_social_round_gray_32 {
   display: inline-block;
   text-indent: -999em;
-  height: 2rem;
+  height: 3rem;
   width: 5rem;
   text-decoration: none;
   vertical-align: middle;
   }
 .facebook_round_gray_32 {
   background: url(https://www.dreamtemplate.com/dreamcodes/social_icons/facebook-focused.png) no-repeat;
+  background-size: 50%;
   }
 .github_round_gray_32 {
   background: url('github.png') no-repeat;
-  background-size: 2rem 2rem;
+  background-size: 2.3rem 2.3rem;
+  border: none;
+  border-radius: 0.5rem;
   }
-
+  @media only screen and (max-width: 768px) {
+  .github_round_gray_32 {
+  background-size: 2.4rem;
+      }
+  }
+/* line divider */
+hr {
+  margin-left: 15%;
+  margin-top: 3rem;
+  text-align: center;
+  width: 70%;
+  border-color: gray;
+}
 /* Back to top link */
 /* Format the back to top link */
 .to-top {
-    font-size: 1.5rem;
+    position: fixed;
+    bottom: 2rem;
+    font-size: 1rem;
     text-decoration: none;
-    color: rgb(107, 101, 101);
-    margin: 2.5rem;
-    padding: 3rem;
-    }
+    color: rgb(175, 177, 155);
+  }
 .to-top:hover {
     color: red;
     font-weight: bold;
-    }
+  }
