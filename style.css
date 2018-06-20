@@ -35,15 +35,13 @@ html li, #submit_button {
  /* -------  Set up for mobile phones -----------*/
 @media only screen and (max-width: 768px) {
 html {
-  background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url("tunnel.jpeg") no-repeat center center fixed; 
+  background: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0,0.1)), url("tunnel.jpeg") no-repeat center center fixed; 
   background-size: cover;
   background-position: 50% top;
   background-attachment: fixed;
   font-size: 10px;
 }
-/* body {
-  margin: 0 5% 0 5%;
-} */
+
 .nav {
     margin: 0.5%;
     line-height: 1rem;
@@ -225,16 +223,9 @@ nav .nav-link {
     -webkit-animation: typing 2s steps(21, end),
                blink-caret .5s step-end infinite alternate;
 }
-.education .animation{
-  /* margin-left: 30%; */
-}
 .work-experience .animation{
   margin-right: 30%;
 }
-.work-experience p {
-  text-align: center;
-  font-size: 1.5rem;
-  }
 
 /* ----------- My expertise Section -------- */
 @media only screen and (min-width: 768px) {
